@@ -27,7 +27,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/administrator/dashboard';
 
     /**
      * Create a new controller instance.
@@ -51,7 +51,7 @@ class LoginController extends Controller
 
         $request->session()->invalidate();
 
-        return redirect('/');
+        return redirect('/administrator/dashboard/');
     }
 
 
@@ -87,14 +87,11 @@ class LoginController extends Controller
         }
         if ($user_role->role === "admin"){
             if ($this->attemptLogin($request)) {
-                $this->redirectTo="admin";
+                $this->redirectTo="administrator/dashboard";
                 return $this->sendLoginResponse($request);
             }
         }else{
-            if ($this->attemptLogin($request)) {
-                $this->redirectTo="home";
-                return $this->sendLoginResponse($request);
-            }
+            return $this->sendFailedLoginResponse($request);
         }
 
         // If the login attempt was unsuccessful we will increment the number of attempts

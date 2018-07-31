@@ -11,20 +11,33 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'WelcomeController@index')->name('/');
+
+Route::get('login', 'UserLoginController@showLoginForm')->name('user.getLogin');
+
+Route::post('login', 'UserLoginController@login')->name('user.login');
+
+Route::post('logout', 'UserLoginController@logout')->name('user.logout');
+
+Route::middleware(['auth','user'])->group(function () {
+
+    Route::get('/home', 'HomeController@index')->name('home');
+
 });
 
-Auth::routes();
 
-Route::middleware(['auth','admin'])->prefix('admin')->group(function () {
+Route::prefix('administrator/dashboard')->group(function () {
 
-    Route::get('/','Admin\DashboardController@index')->name('dashboard.index');
+    Auth::routes();
 
-    Route::get('main',function (){
-        return "hello";
+    Route::get('/', 'Auth\LoginController@showLoginForm');
+
+
+    Route::middleware(['auth', 'admin'])->group(function () {
+
+        Route::get('/index', 'Admin\DashboardController@index')->name('dashboard.index');
+
     });
 
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
