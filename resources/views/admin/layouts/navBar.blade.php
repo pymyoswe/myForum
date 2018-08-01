@@ -3,9 +3,9 @@
     <!-- Logo -->
     <a href="{{route('dashboard.index')}}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>LTE</b></span>
+        <span class="logo-mini"><b>MF</b></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b> LTE</span>
+        <span class="logo-lg"><b>My</b> Forum</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -35,13 +35,13 @@
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                <a href="{{route('dashboard.users.show',auth()->user()->id)}}" class="btn btn-default btn-flat"><span class="fa fa-info-circle text-purple"></span> Profile</a>
                             </div>
                             <div class="pull-right">
                                 <a href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
-                                    Logout
+                                    LOGOUT <span class="glyphicon glyphicon-log-out text-purple"></span>
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

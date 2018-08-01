@@ -37,6 +37,9 @@ Route::prefix('administrator/dashboard')->group(function () {
 
         Route::get('/index', 'Admin\DashboardController@index')->name('dashboard.index');
 
+        Route::resource('users', 'Admin\UserController', ['as' => 'dashboard']);
+
+
     });
 
 });
