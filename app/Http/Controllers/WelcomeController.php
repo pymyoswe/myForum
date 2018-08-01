@@ -12,6 +12,6 @@ class WelcomeController extends Controller
             return redirect()->route('home');
         }
 
-        return view('welcome');
+        return view('welcome2');
     }
 }
