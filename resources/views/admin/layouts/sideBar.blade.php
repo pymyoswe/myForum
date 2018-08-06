@@ -39,6 +39,20 @@
 
             <li class="treeview">
                 <a href="#">
+                    <i class="fa fa-files-o text-primary"></i>
+                    <span>Proposal Management</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{route('dashboard.proposal.index')}}"><i class="fa fa-eye text-blue"></i> <span>Proposal List</span></a></li>
+                    <li><a href="{{route('dashboard.proposal.create')}}"><i class="fa fa-plus-circle text-blue"></i> <span>Add New Proposal</span></a></li>
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
                     <i class="fa fa-gears"></i>
                     <span>Settings</span>
                     <span class="pull-right-container">

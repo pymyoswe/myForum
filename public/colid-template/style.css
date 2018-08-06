@@ -360,6 +360,26 @@ input:-webkit-autofill:focus {
     background-color: #8a2be2;
 }
 
+.dropdown-menu{
+    background-color: #8a2be2;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dropdown-menu li a{
+    background: none;
+    padding: 10px 10px;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dropdown-menu li a:hover{
+    border-radius: 10px;
+    background: #9400d3;
+    color: white;
+}
+
 
 
 /**

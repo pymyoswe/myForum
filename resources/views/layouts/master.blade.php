@@ -9,7 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Home</title>
+    <title>@yield('title')</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="{{asset('colid-template/images/apple-touch-icon.png')}}">
     <link rel="shortcut icon" type="image/ico" href="{{asset('colid-template/images/favicon.ico')}}" />
@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="{{asset('colid-template/style.css')}}">
     <link rel="stylesheet" href="{{asset('colid-template/css/responsive.css')}}">
     <script src="{{asset('colid-template/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+
+    <style>
+
+    </style>
 
 </head>
 

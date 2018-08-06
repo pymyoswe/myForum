@@ -7,26 +7,27 @@
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                     <div class="page-title">
                         <h2>Contact with us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-6 col-lg-6">
                     <address class="side-icon-boxes">
                         <div class="side-icon-box">
                             <div class="side-icon">
                                 <img src="{{asset('colid-template/images/location-arrow.png')}}" alt="">
                             </div>
-                            <p><strong>Address: </strong> Box 564, Disneyland <br />USA</p>
+                            <p><strong>Address: </strong> Conference Secretariat Office <br />
+                                Building (1/2-3), West Yangon Technological University, Yangon, <br />Myanmar.
+                            </p>
                         </div>
                         <div class="side-icon-box">
                             <div class="side-icon">
                                 <img src="{{asset('colid-template/images/phone-arrow.png')}}" alt="">
                             </div>
                             <p><strong>Telephone: </strong>
-                                <a href="callto:8801812726495">+8801812726495</a> <br />
-                                <a href="callto:8801687420471">+8801687420471</a>
+                                <a href="callto:95-9-420417121">+95-9-420417121</a> <br />
+                                <a href="callto:95-9-799253482">+95-9-799253482</a>
                             </p>
                         </div>
                         <div class="side-icon-box">
@@ -34,42 +35,31 @@
                                 <img src="{{asset('colid-template/images/mail-arrow.png')}}" alt="">
                             </div>
                             <p><strong>E-mail: </strong>
-                                <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
-                                <a href="mailto:youremail@example.com">example@mail.com</a>
+                                <a href="mailto:icstsd@wytu.edu.mm">icstsd@wytu.edu.mm</a> <br />
+                                <a href="mailto:icstsdoffice@gmail.com">icstsdoffice@gmail.com</a> <br />
+                                <a href="mailto:wytu2018@gmail.com">wytu2018@gmail.com</a>
                             </p>
                         </div>
                     </address>
                 </div>
-                <div class="col-xs-12 col-md-8">
-                    <form action="process.php" id="contact-form" method="post" class="contact-form">
-                        <div class="form-double">
-                            <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
-                            <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
-                        </div>
-                        <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
-                        <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
-                        <button type="sibmit" class="button">Submit</button>
-                    </form>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <h3>
+                        Online Registration & Paper Submission
+                    </h3>
+                    <h4>
+                        Please visit our website for more information
+                    </h4>
+                    <h4>
+                        http://www.wytu.edu.mm/ICSTSD
+                    </h4>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer-middle">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 pull-right">
-                    <ul class="social-menu text-right x-left">
-                        <li><a href="#"><i class="ti-facebook"></i></a></li>
-                        <li><a href="#"><i class="ti-twitter"></i></a></li>
-                        <li><a href="#"><i class="ti-google"></i></a></li>
-                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                        <li><a href="#"><i class="ti-github"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id corrupti architecto consequuntur, laborum quaerat sed nemo temporibus unde, beatae vel.</p>
-                </div>
-            </div>
+
+
         </div>
     </div>
     <div class="footer-bottom">
